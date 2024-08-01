@@ -1,0 +1,240 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body{
+    @apply text-default-size bg-[#FFF6EE] font-kanit box-border;
+  }
+}
+
+@layer components {
+  .section{
+    @apply mt-20;
+  }
+
+  .section-title {
+    @apply text-blue-bg text-center capitalize text-[1.3rem] md:text-[1.7rem] lg:text-biggest-size font-semibold mt-5;
+  }
+
+  .b-grid {
+    @apply grid gap-4;
+  }
+
+  .b-container {
+    @apply max-w-[1150px] w-[calc(100%-2rem)] mx-auto;
+  }
+
+  /* btn */
+  .btn-back {
+    @apply absolute top-3 left-3 w-[40px] h-[40px] rounded-full bg-blue-bg xl:fixed xl:top-[280px] xl:left-[90px];
+  }
+
+  .btn-send {
+    @apply flex mx-auto justify-center items-center sticky bottom-3 w-full max-w-[500px] h-[50px] text-[1.2rem] md:mx-auto md:my-4 font-semibold rounded-lg bg-[#F4872C] hover:bg-opacity-0 hover:border-[#F4872C] hover:border-2 hover:text-[#F4872C] text-gray-0;
+  }
+
+  /* nav */
+  
+  .l-header {
+    @apply w-full h-auto fixed top-0 left-0 z-[20] text-gray-0 transition-all bg-blue-bg drop-shadow-[0_5px_25px_rgba(0,0,0,0.20)] md:h-16 md:flex md:items-center;
+  }
+
+  .scroll-header .logo-b{
+    @apply block
+  }
+
+
+  .scroll-header, .scroll-header .nav__menu{
+    @apply bg-bone text-gray-900 ;
+  }
+
+  .nav {
+    @apply h-12 flex text-[1rem] justify-between items-center md:text-[1.2rem] ;
+  }
+  
+  .nav__menu {
+    @apply w-full md:w-auto fixed md:static top-12 left-0 pt-4 md:pt-0 bg-blue-bg transition-all ;
+  }
+  
+  .nav__list {
+    @apply font-medium flex flex-col items-center md:flex-row md:items-center md:w-auto;
+  }
+  
+  .nav__item {
+    @apply mb-6 md:mb-0 md:ml-4;
+  }
+  
+  .show-menu {
+    @apply top-[-230px];
+  }
+  
+
+  /* Home */
+  .home__container{
+    @apply relative m-auto h-screen;
+  }
+
+  .title-hero {
+    @apply absolute top-[130px] w-full max-w-[300px] lg:max-w-[450px] xs:max-w-[380px] md:max-w-[430px] text-gray-0 z-10;
+  }
+  /* Destinasi */
+
+  .destination__container {
+    @apply mt-8 justify-center md-lite:grid-cols-[repeat(2,max-content)] lg:grid-cols-[repeat(3,max-content)] mb-10;
+  }
+
+  .destination__category {
+    @apply mx-2 hover:font-medium transition-all
+  }
+
+  .destination__content {
+    @apply relative m-auto bg-gray-0 rounded-lg shadow-[0_6px_12px_0_rgba(0,0,0,0.3)] overflow-hidden; 
+  }
+
+  .destination__content img {
+    @apply w-[300px] h-[300px] bg-contain transform transition-transform duration-300 ease-in-out hover:scale-110;
+  }
+
+  .destination__title, .destination_location {
+    @apply absolute text-gray-0 bottom-5 left-5 text-[1.25rem] font-semibold w-full mb-5 capitalize;
+  }
+
+  .destination_location {
+    @apply text-small-size font-normal bottom-0 opacity-90;
+  }
+
+
+  /* Css for folder Destinasi */
+  .read{
+    @apply font-light leading-snug normal-case text-small-size md-lite:text-[1.1rem];
+  }
+
+  .title-text {
+    @apply pt-4 font-medium text-[1rem] capitalize md:text-[1.45rem];
+  }
+
+  .img-destination{
+    @apply mt-4 aspect-[9/3] w-[300px] h-[200px] xs:w-[450px] xs:h-[280px] md:w-[600px] md:h-[300px];
+  }
+
+  /* Tur */
+  .swiper-container {
+    @apply h-[450px] mt-2 mb-8;
+  }
+
+  .swiper-slide{
+    @apply flex justify-center items-center;
+  }
+
+  .tur__content {
+    @apply grid grid-rows-[repeat(1fr,50px)] rounded-lg overflow-hidden drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] bg-gray-25;
+  }
+
+  .tur__content, .tur__content img {
+    @apply w-[350px];
+  }
+  
+  .tur-icon {
+    @apply flex justify-center items-center fixed w-16 h-8 text-[1.2rem] bg-gradient-to-r from-[rgba(133,133,133,0.44)] to-[rgba(0,0,0,.44)] bg-opacity-10 backdrop-blur-md top-5 right-4 text-gray-0 rounded-xl p-2;
+  }
+  
+  .tur-icon i {
+    @apply text-[#FFD15C] pr-1;
+  }
+
+  .tur__description{
+    @apply w-full h-[120px] fixed bottom-0 px-[10px] bg-gradient-to-r from-[rgba(133,133,133,0.24)] to-[rgba(0,0,0,.24)] bg-opacity-20 backdrop-blur-md  text-gray-0 ;
+  }
+
+  .tur__description h2  {
+    @apply capitalize text-big-size font-semibold;
+  }
+
+  .tur__description p {
+    @apply line-clamp-3 text-small-size font-light
+  }
+
+  /* css for next page */
+  .gallery {
+    @apply w-full h-full min-w-[0px] min-h-[60px] mx-2 rounded drop-shadow-md
+  }
+
+  /* Blog */
+  .blog__container{
+    @apply mt-5 md-lite:grid-cols-[repeat(2,max-content)] justify-center;
+  }
+  
+  .blog__container h1 {
+    @apply uppercase;
+  }
+
+  .blog{
+    @apply relative;
+  }
+
+  .blog img {
+    @apply brightness-75 transition-all hover:brightness-90 rounded-lg ;
+  }
+
+  .blog__layout-second{
+    @apply w-auto h-auto gap-y-5 flex flex-row md-lite:flex-col;
+  }
+
+  .main__blog img {
+    @apply md-lite:w-[450px] md-lite:h-[420px] md:w-[500px] lg:w-[600px] lg:h-[500px]
+  }
+
+  .second__blog img {
+    @apply md-lite:h-[200px] md:w-[280px] md:h-[200px] lg:w-[400px] lg:h-[240px]
+  }
+
+  .blog__description, .blog__description-1st {
+    @apply absolute left-3 bottom-[15px] text-gray-0;
+  }
+
+  .blog__description-1st {
+    @apply font-semibold md:text-big-size;
+  }
+
+  .blog__description-1st span {
+    @apply font-light md:text-[1.20rem];
+  }
+
+  .blog__description {
+    @apply text-smaller-size md:text-[1.20rem];
+  }
+
+  .blog__description span {
+    @apply text-[10px] font-light md:text-[1rem];
+  }
+
+  /* footer */
+  footer{
+    @apply mt-5 pt-5 text-gray-0 h-full bg-[#130B5F]
+  }
+
+  footer li {
+    @apply pt-1 capitalize py-2 cursor-pointer font-light hover:text-gray-100 text-small-size md:text-[1.1rem]
+  }
+
+  .footer__container {
+    @apply md:w-[calc(100%-14rem)] mx-5 gap-3 flex flex-col xs:flex-row xs:justify-around;
+  }
+  .social__media{
+    @apply mt-4 flex xs:justify-around items-center 
+  }
+
+  .social__media li {
+    @apply w-[1.5rem] h-[1.5rem] text-[1.025rem] xs:w-8 xs:h-8 mx-1 pt-0 xs:text-big-size text-center rounded-lg bg-bone text-[#130B5F] hover:text-gray-0 hover:bg-[#050222]
+  }
+
+  .footer-title {
+    @apply uppercase mb-3 text-[1rem] font-semibold xs:text-[1.25rem]
+  }
+}
+
+

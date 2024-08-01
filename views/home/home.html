@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jantung Nuswantara</title>
+  <link rel="shortcut icon" href="/assets/img/logo/logo-w.webp" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/output.css">
+  
+  <!-- BOX ICONS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+
+  <!-- Mixitup JS -->
+  <script src="/assets/js/mixitup.min.js" defer></script>
+  <!-- Swiper JS -->
+  <script src="/assets/js/swiper-bundle.min.js" defer></script>
+  <!-- Main JS -->
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body >
+  <header class="font-normal l-header" id="header">
+    <nav class="nav b-container">
+      <a href="" class="logo">
+        <img class="w-8 h-8 logo-w md:w-10 md:h-10" src="/assets/img/logo/logo-w.webp" alt="">
+        <img class="absolute hidden top-2 md:top-[12px] w-8 h-8 logo-b md:w-10 md:h-10" src="/assets/img/logo/logo-b.webp" alt="">
+      </a>
+      
+      <div class="nav__menu show-menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero">Utama</a></li>
+          <li class="nav__item"><a href="#destinasi">Destinasi</a></li>
+          <li class="nav__item"><a href="#perjalanan">Perjalanan</a></li>
+          <li class="nav__item"><a href="#artikel">Artikel</a></li>
+        </ul>
+      </div>
+    
+      <div class="text-[1.75rem] cursor-pointer md:hidden" id="nav-burger">
+        <i class='bx bx-menu-alt-right' ></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-blue-bg" id="hero">
+      <div class="home__container b-container b-grid md:grid-cols-[repeat(2,1fr)]">
+        <div class="title-hero">
+          <h1 class="uppercase leading-snug text-[1.5rem] font-bold xs:text-[2rem] md:text-[2.25] lg:text-biggest-size">jelajahi seluruh keindahan indonesia</h1>
+          <p class="pt-2 font-light text-small-size xs:text-[1rem]">Kami siap membawa Anda pada petualangan tak terlupakan untuk menjelajahi keindahan alam Indonesia. Temukan destinasi terbaik dan nikmati paket wisata yang dirancang khusus untuk Anda.</p>
+        </div>
+  
+        <div class="absolute bottom-0 right-0">
+          <img class="w-[500px] md-lite:w-[700px] lg:w-[800px]" src="/assets/img/home/bg.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class=" b-container section" id="destinasi">
+        <h1 class="section-title">lokasi populer</h1>
+
+      <div class="mt-5 font-normal  text-center cursor-pointer md:text-[1.2rem]">
+        <span class="destination__category" data-filter=".semua">Semua</span>
+        <span class="destination__category" data-filter=".dataran">Dataran</span>
+        <span class="destination__category" data-filter=".pegunungan">Pegunungan</span>
+        <span class="destination__category" data-filter=".lautan">Lautan</span>
+      </div>
+      <div class="destination__container b-grid">
+
+        <!-- DATARAN -->
+        <div class="destination__content semua dataran">
+          <a href="/views/pages/destinasi/borobudur.html">
+            <img src="/assets/img/home/borobudur-new4.webp" alt="Candi Borobudur">
+          </a>
+            <h1 class="destination__title">Borobudur</h1>
+            <span class="destination_location">magelang, jawa tengah</span>
+        </div>
+
+        <div class="destination__content semua dataran">
+            <img src="/assets/img/home/komodo-islands-new.webp" alt="Pulau Komodo">
+            <h1 class="destination__title">pulau komodo</h1>
+            <span class="destination_location">flores, nusa tenggara timur</span>
+        </div>
+        <!-- PEGUNUNGAN -->
+        <div class="destination__content semua pegunungan">
+            <img src="/assets/img/home/bromo-new.webp" alt="Gunung Bromo">
+            <h1 class="destination__title">bromo</h1>
+            <span class="destination_location">probolinggo, jawa timur</span>
+        </div>
+
+        <div class="destination__content semua pegunungan">
+            <img src="/assets/img/home/rinjani-new.webp" alt="Gunung Rinjani">
+            <h1 class="destination__title">rinjani</h1>
+            <span class="destination_location">lombok utara, nusa tenggara barat</span>
+        </div>
+        <!-- LAUTAN -->
+        <div class="destination__content semua lautan">
+            <img src="/assets/img/home/wakatobi-new.webp" alt="Wakatobi">
+            <h1 class="destination__title">wakatobi</h1>
+            <span class="destination_location">wakatobi, sulawesi tenggara</span>
+        </div>
+        
+        <div class="destination__content semua lautan">
+            <img src="/assets/img/home/raja-ampat-new.webp" alt="Raja Ampat">
+            <h1 class="destination__title">raja ampat</h1>
+            <span class="destination_location">raja ampat, papua barat</span>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section" id="perjalanan">
+      <div class="b-container">
+        <h1 class="section-title">paket wisata</h1>
+        
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide" data-swiper-autopaly="500">
+              <div class="tur__content">
+                <div>
+                  <a href="/views/pages/perjalanan/borobudur.html">
+                    <img src="/assets/img/tur/trip-1.webp" alt="Candi Brorbudur">
+                  </a>
+                  <div class="tur-icon">
+                    <i class='bx bxs-star'></i>
+                    <span>4.7</span>
+                  </div>
+                </div>
+                <div class="tur__description">
+                  <h2>candi borobudur</h2>
+                  <p>Temukan pesona dan keagungan Candi Borobudur, situs warisan dunia UNESCO yang megah di tengah hamparan alam Yogyakarta.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-swiper-autopaly="500">
+              <div class="tur__content">
+                <div>
+                  <img src="/assets/img/tur/trip-2.webp" alt="Raja Ampat">
+                  <div class="tur-icon">
+                    <i class='bx bxs-star'></i>
+                    <span>4.9</span>
+                  </div>
+                </div>
+                <div class="tur__description">
+                  <h2>raja ampat</h2>
+                  <p>Nikmati keindahan bawah laut Raja Ampat, surga bagi penyelam dengan terumbu karang yang memukau dan keanekaragaman hayati laut yang luar biasa.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-swiper-autopaly="500">
+              <div class="tur__content">
+                <div>
+                  <img src="/assets/img/tur/trip-3.webp" alt="Wae Rebo">
+                  <div class="tur-icon">
+                    <i class='bx bxs-star'></i>
+                    <span>4.8</span>
+                  </div>
+                </div>
+                <div class="tur__description">
+                  <h2>wae rebo</h2>
+                  <p>Jelajahi desa adat Wae Rebo di ketinggian Flores, di mana Anda dapat merasakan kehidupan tradisional dan keindahan alam yang menenangkan.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide" data-swiper-autopaly="500">
+              <div class="tur__content">
+                <div>
+                  <img src="/assets/img/tur/trip-4.webp" alt="Gunung Bromo">
+                  <div class="tur-icon">
+                    <i class='bx bxs-star'></i>
+                    <span>4.9</span>
+                  </div>
+                </div>
+                <div class="tur__description">
+                  <h2>gunung bromo</h2>
+                  <p>Saksikan matahari terbit yang menakjubkan di Gunung Bromo, salah satu destinasi wisata alam paling ikonik di Indonesia dengan pemandangan kawah vulkanik yang spektakuler.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="b-container section" id="artikel">
+      <h1 class="section-title">artikel perjalanan</h1>
+
+      <div class="blog__container b-grid">
+        <div class="blog main__blog">
+          <img src="/assets/img/blog/blog-1.webp" alt="">
+          <div class="blog__description-1st">
+            <h1>petualangan di negeri naga</h1>
+            <span>17 juni 2024</span>
+          </div>
+        </div>
+        <div class="blog__layout-second">
+          <div class="blog second__blog">
+            <img src="/assets/img/blog/blog-2.webp" alt="">
+            <div class="blog__description">
+              <h1>eksplorasi keajaiban laut</h1>
+              <span>24 juni 2024</span>
+            </div>
+          </div>
+          <div class="blog second__blog">
+            <img src="/assets/img/blog/blog-3.webp" alt="">
+            <div class="blog__description">
+              <h1>menggenggam keindahan fajar</h1>
+              <span>7 juli 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__container">
+      <div>
+        <span class="flex w-[155px] h-[63px] md:w-[250px] md:h-[115px] justify-center items-center gap-2 capitalize bg-gray-900 rounded-lg">
+          <img class="w-[50px] h-[50px] md:w-[100px] md:h-[100px]" src="/assets/img/logo/logo-w.webp" alt="">
+          <h1 class="text-[1rem] font-medium md:text-big-size">jantung<br>nuswantara</h1>
+        </span>
+          <ul class="social__media">
+            <li><i class='bx bxl-facebook'></i></li>
+            <li><i class='bx bxl-instagram-alt'></i></li>
+            <li><i class='bx bxl-twitter'></i></li>
+            <li><i class='bx bxl-tiktok'></i></li>
+          </ul>
+      </div>
+      <div>
+        <h1 class="footer-title">detail tautan</h1>
+          <ul>
+            <li>utama</li>
+            <li>destinasi</li>
+            <li>perjalanan</li>
+            <li>artikel</li>
+          </ul>
+      </div>
+      <div>
+        <h1 class="footer-title">bantuan</h1>
+        <ul>
+          <li>pusat bantuan</li>
+          <li>FAQs</li>
+          <li>status</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
