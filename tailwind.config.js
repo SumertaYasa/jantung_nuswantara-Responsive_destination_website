@@ -1,12 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./views/**/*.{html, js}"],
+  darkMode: 'class',
   theme: {
-    
-
     colors: {
-      'bone': '#FFFDFB',
-      'blue-bg': '#1454AE',
+      'all': {
+        light: '#FFF6EE', // Warna terang
+        dark: '#061419'   // Warna gelap (lebih terang)
+      },
+      'footer': {
+        light: '#130B5F', // Warna terang
+        dark: '#5f458f'   // Warna gelap (lebih cerah)
+      },
+      'home': {
+        light: '#1454AE', // Warna terang
+        dark: '#062249'   
+      },
       'gray': {
           900: '#000000',  // Hitam
           800: '#1a1a1a',
@@ -37,17 +46,24 @@ module.exports = {
       }
 
     },
+      extend: {
+        fontFamily: {
+          kanit: ['kanit'],
+        },
+        screens: {
+          'xs': '500px',
+          'xs-lite': '600px',
+          'md-lite': '700px',
+          'md': '767px',
+        },
+      },
+  variants: {
     extend: {
-      fontFamily: {
-        kanit: ['kanit'],
-      },
-      screens: {
-        'xs': '500px',
-        'xs-lite': '600px',
-        'md-lite': '700px',
-        'md': '767px',
-      },
+      backgroundColor: ['dark'], 
+      textColor: ['dark'], 
+      borderColor: ['dark'],
     }
+  },  
   },
   plugins: [],
 }

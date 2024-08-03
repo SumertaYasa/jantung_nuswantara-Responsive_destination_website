@@ -6,8 +6,8 @@
 @tailwind utilities;
 
 @layer base {
-  body{
-    @apply text-default-size bg-[#FFF6EE] font-kanit box-border;
+  main{
+    @apply text-default-size bg-all-light dark:bg-all-dark font-kanit dark:text-gray-0 box-border;
   }
 }
 
@@ -17,7 +17,7 @@
   }
 
   .section-title {
-    @apply text-blue-bg text-center capitalize text-[1.3rem] md:text-[1.7rem] lg:text-biggest-size font-semibold mt-5;
+    @apply text-home-light dark:text-[#196CE0] text-center capitalize text-[1.3rem] md:text-[1.7rem] lg:text-biggest-size font-semibold mt-5;
   }
 
   .b-grid {
@@ -30,17 +30,20 @@
 
   /* btn */
   .btn-back {
-    @apply absolute top-3 left-3 w-[40px] h-[40px] rounded-full bg-blue-bg xl:fixed xl:top-[280px] xl:left-[90px];
+    @apply absolute top-3 left-3 w-[40px] h-[40px] rounded-full bg-home-light xl:fixed xl:top-[280px] xl:left-[90px];
   }
 
   .btn-send {
     @apply flex mx-auto justify-center items-center sticky bottom-3 w-full max-w-[500px] h-[50px] text-[1.2rem] md:mx-auto md:my-4 font-semibold rounded-lg bg-[#F4872C] hover:bg-opacity-0 hover:border-[#F4872C] hover:border-2 hover:text-[#F4872C] text-gray-0;
   }
 
+  .btn-darkMode{
+    @apply w-[30px] h-[30px] flex justify-center items-center rounded-full bg-gray-500
+  }
   /* nav */
   
   .l-header {
-    @apply w-full h-auto fixed top-0 left-0 z-[20] text-gray-0 transition-all bg-blue-bg drop-shadow-[0_5px_25px_rgba(0,0,0,0.20)] md:h-16 md:flex md:items-center;
+    @apply w-full h-auto fixed top-0 left-0 z-[20] text-gray-0 transition-all bg-home-light dark:bg-home-dark drop-shadow-[0_5px_25px_rgba(0,0,0,0.20)] md:h-16 md:flex md:items-center;
   }
 
   .scroll-header .logo-b{
@@ -49,7 +52,7 @@
 
 
   .scroll-header, .scroll-header .nav__menu{
-    @apply bg-bone text-gray-900 ;
+    @apply bg-all-light dark:bg-all-dark text-gray-900 dark:text-gray-0 ;
   }
 
   .nav {
@@ -57,7 +60,7 @@
   }
   
   .nav__menu {
-    @apply w-full md:w-auto fixed md:static top-12 left-0 pt-4 md:pt-0 bg-blue-bg transition-all ;
+    @apply w-full md:w-auto fixed md:static top-12 left-0 pt-4 md:pt-0 bg-home-light dark:bg-home-dark transition-all ;
   }
   
   .nav__list {
@@ -92,7 +95,7 @@
   }
 
   .destination__content {
-    @apply relative m-auto bg-gray-0 rounded-lg shadow-[0_6px_12px_0_rgba(0,0,0,0.3)] overflow-hidden; 
+    @apply relative m-auto bg-gray-0 rounded-lg shadow-[0_6px_12px_0_rgba(0,0,0,0.3)] dark:shadow-[0_6px_12px_6px_rgba(255,255,255,0.1)] overflow-hidden; 
   }
 
   .destination__content img {
@@ -165,7 +168,7 @@
 
   /* Blog */
   .blog__container{
-    @apply mt-5 md-lite:grid-cols-[repeat(2,max-content)] justify-center;
+    @apply mt-5 pb-5 md-lite:grid-cols-[repeat(2,max-content)] justify-center;
   }
   
   .blog__container h1 {
@@ -214,7 +217,7 @@
 
   /* footer */
   footer{
-    @apply mt-5 pt-5 text-gray-0 h-full bg-[#130B5F]
+    @apply pt-5 text-gray-0 h-full bg-footer-light dark:bg-footer-dark
   }
 
   footer li {
@@ -222,14 +225,14 @@
   }
 
   .footer__container {
-    @apply md:w-[calc(100%-14rem)] gap-3 px-5 border mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
+    @apply md:w-[calc(100%-14rem)] gap-3 px-5 mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
   }
   .social__media{
     @apply mt-4 flex xs:justify-around items-center 
   }
 
   .social__media li {
-    @apply w-[1.5rem] h-[1.5rem] text-[1.025rem] xs:w-8 xs:h-8 mx-1 pt-0 xs:text-big-size text-center rounded-lg bg-bone text-[#130B5F] hover:text-gray-0 hover:bg-[#050222]
+    @apply w-[1.5rem] h-[1.5rem] text-[1.025rem] xs:w-8 xs:h-8 mx-1 pt-0 xs:text-big-size text-center rounded-lg bg-all-light text-[#130B5F] hover:text-gray-0 hover:bg-[#050222]
   }
 
   .footer-title {
