@@ -675,13 +675,8 @@ main:is(.dark *){
 
 .btn-darkMode{
   display: flex;
-  height: 30px;
-  width: 30px;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(102 102 102 / var(--tw-bg-opacity));
 }
 
 /* nav */
@@ -1235,7 +1230,7 @@ footer{
 
 footer:is(.dark *){
   --tw-bg-opacity: 1;
-  background-color: rgb(95 69 143 / var(--tw-bg-opacity));
+  background-color: rgb(11 7 49 / var(--tw-bg-opacity));
 }
 
 footer li{
@@ -1243,7 +1238,7 @@ footer li{
   padding-bottom: 0.5rem;
   padding-top: 0.25rem;
   font-size: 0.813rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -1264,22 +1259,20 @@ footer li:hover{
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(43 26 202 / var(--tw-border-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 
 @media (min-width: 500px){
   .footer__container{
+    width: calc(100% - 14rem);
     flex-direction: row;
     justify-content: space-around;
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-
-@media (min-width: 767px){
-  .footer__container{
-    width: calc(100% - 14rem);
   }
 }
 
@@ -1332,7 +1325,7 @@ footer li:hover{
   text-transform: uppercase;
 }
 
-@media (min-width: 500px){
+@media (min-width: 767px){
   .footer-title{
     font-size: 1.25rem;
   }
@@ -1464,6 +1457,10 @@ footer li:hover{
   gap: 0.5rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1492,6 +1489,11 @@ footer li:hover{
 
 .p-2{
   padding: 0.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-2{
@@ -1607,8 +1609,8 @@ footer li:hover{
   background-color: rgb(6 34 73 / var(--tw-bg-opacity));
 }
 
-.dark\:brightness-\[\.90\]:is(.dark *){
-  --tw-brightness: brightness(.90);
+.dark\:brightness-\[\.85\]:is(.dark *){
+  --tw-brightness: brightness(.85);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 

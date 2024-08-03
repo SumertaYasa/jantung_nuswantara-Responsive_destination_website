@@ -38,7 +38,7 @@
   }
 
   .btn-darkMode{
-    @apply w-[30px] h-[30px] flex justify-center items-center rounded-full bg-gray-500
+    @apply flex justify-center items-center
   }
   /* nav */
   
@@ -221,11 +221,11 @@
   }
 
   footer li {
-    @apply pt-1 capitalize py-2 cursor-pointer font-light hover:text-gray-100 text-small-size md:text-[1.1rem]
+    @apply pt-1 capitalize py-2 cursor-pointer font-normal hover:text-gray-100 text-small-size md:text-[1.1rem]
   }
 
   .footer__container {
-    @apply md:w-[calc(100%-14rem)] gap-3 px-5 mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
+    @apply xs:w-[calc(100%-14rem)] border-b border-[#2B1ACA] gap-3 px-5 mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
   }
   .social__media{
     @apply mt-4 flex xs:justify-around items-center 
@@ -236,7 +236,7 @@
   }
 
   .footer-title {
-    @apply uppercase mb-3 text-[1rem] font-semibold xs:text-[1.25rem]
+    @apply uppercase mb-3 text-[1rem] font-semibold md:text-[1.25rem]
   }
 }
 

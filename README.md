@@ -8,3 +8,7 @@ Jantung Nuswantara adalah website pariwisata yang memungkinkan pengguna untuk me
 ## instalasi
 
 - npm run dev
+
+
+## note
+terkadang saat inspect element(F12 di windows/Command + SHIFT + C di Mac), akan kaku saat scroll, itu terjadi karena terjadi zoom out/in yang tidak disengaja, dan jika masih, klik ctrl + SHIFT + r untuk reload

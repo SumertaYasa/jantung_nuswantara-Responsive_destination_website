@@ -10,7 +10,7 @@ module.exports = {
       },
       'footer': {
         light: '#130B5F', // Warna terang
-        dark: '#5f458f'   // Warna gelap (lebih cerah)
+        dark: '#0B0731'   // Warna gelap (lebih cerah)
       },
       'home': {
         light: '#1454AE', // Warna terang
