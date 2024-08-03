@@ -222,7 +222,7 @@
   }
 
   .footer__container {
-    @apply md:w-[calc(100%-14rem)] mx-5 gap-3 flex flex-col xs:flex-row xs:justify-around;
+    @apply md:w-[calc(100%-14rem)] gap-3 px-5 border mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
   }
   .social__media{
     @apply mt-4 flex xs:justify-around items-center 

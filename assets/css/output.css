@@ -1208,17 +1208,22 @@ footer li:hover{
 }
 
 .footer__container{
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  border-width: 1px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media (min-width: 500px){
   .footer__container{
     flex-direction: row;
     justify-content: space-around;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
