@@ -34,15 +34,17 @@ const mixer = mixitup(".destination__container", {
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
   breakpoints: {
     300: {
       slidesPerView: 1,
     },
     767: {
-      slidesPerView: 2,
-    },
-    1024: {
       slidesPerView: 3,
+      spaceBetween: 16
     }
   },
 });

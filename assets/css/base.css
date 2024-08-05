@@ -9,6 +9,9 @@
   main{
     @apply text-default-size bg-all-light dark:bg-all-dark font-kanit dark:text-gray-0 box-border;
   }
+  /* section {
+    @apply border
+  } */
 }
 
 @layer components {
@@ -17,7 +20,7 @@
   }
 
   .section-title {
-    @apply text-home-light dark:text-[#196CE0] text-center capitalize text-[1.3rem] md:text-[1.7rem] lg:text-biggest-size font-semibold mt-5;
+    @apply text-home-light dark:text-[#97BDF2] text-center capitalize text-[1.3rem] md:text-[1.7rem] lg:text-biggest-size font-semibold mt-5;
   }
 
   .b-grid {
@@ -43,7 +46,7 @@
   /* nav */
   
   .l-header {
-    @apply w-full h-auto fixed top-0 left-0 z-[20] text-gray-0 transition-all bg-home-light dark:bg-home-dark drop-shadow-[0_5px_25px_rgba(0,0,0,0.20)] md:h-16 md:flex md:items-center;
+    @apply w-full h-auto fixed top-0 left-0 z-[20] text-gray-0 transition-all bg-home-light drop-shadow-[0_5px_25px_rgba(0,0,0,0.20)] md:h-16 md:flex md:items-center dark:bg-home-dark dark:drop-shadow-[0_5px_20px_rgba(255,255,255,0.04)];
   }
 
   .scroll-header .logo-b{
@@ -68,7 +71,10 @@
   }
   
   .nav__item {
-    @apply mb-6 md:mb-0 md:ml-4;
+    @apply mb-6 w-full md:mb-0 md:ml-4;
+  }
+  .nav__item a {
+    @apply mx-3 flex justify-center items-center max-w-[767px] md:mx-0 
   }
   
   .show-menu {
@@ -87,19 +93,24 @@
   /* Destinasi */
 
   .destination__container {
-    @apply mt-8 justify-center md-lite:grid-cols-[repeat(2,max-content)] lg:grid-cols-[repeat(3,max-content)] mb-10;
+    @apply h-[500px] md-lite:h-full overflow-auto md:overflow-hidden mt-8 mb-10 md-lite:pb-3 justify-center md-lite:grid-cols-[repeat(2,max-content)] lg:grid-cols-[repeat(3,max-content)] ;
+  }
+
+  .destination__container::-webkit-scrollbar {
+    @apply hidden;
+    scrollbar-width: none;
   }
 
   .destination__category {
-    @apply mx-2 hover:font-medium transition-all
+    @apply mx-2 dark:hover:text-gray-100 transition-all
   }
 
   .destination__content {
-    @apply relative m-auto bg-gray-0 rounded-lg shadow-[0_6px_12px_0_rgba(0,0,0,0.3)] dark:shadow-[0_6px_12px_6px_rgba(255,255,255,0.1)] overflow-hidden; 
+    @apply relative w-max h-max bg-gray-0 rounded-lg shadow-[0_6px_12px_0_rgba(0,0,0,0.3)] dark:shadow-[0_6px_12px_6px_rgba(255,255,255,0.1)] md:m-1 overflow-hidden; 
   }
 
   .destination__content img {
-    @apply w-[300px] h-[300px] bg-contain transform transition-transform duration-300 ease-in-out hover:scale-110;
+    @apply w-[300px] h-[300px] bg-contain transform transition-transform duration-300 ease-in-out hover:scale-110 dark:brightness-95;
   }
 
   .destination__title, .destination_location {
@@ -126,19 +137,19 @@
 
   /* Tur */
   .swiper-container {
-    @apply h-[450px] mt-2 mb-8;
+    @apply h-[500px] mt-2 mb-8;
   }
 
   .swiper-slide{
-    @apply flex justify-center items-center;
+    @apply  flex justify-center items-center;
   }
 
   .tur__content {
-    @apply grid grid-rows-[repeat(1fr,50px)] rounded-lg overflow-hidden drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] bg-gray-25;
+    @apply grid grid-rows-[repeat(1fr,50px)] rounded-lg overflow-hidden drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] bg-gray-25 dark:drop-shadow-[0_4px_6px_rgba(255,255,255,0.25)];
   }
 
   .tur__content, .tur__content img {
-    @apply w-[350px];
+    @apply w-[350px] dark:brightness-95;
   }
   
   .tur-icon {
@@ -176,7 +187,7 @@
   }
 
   .blog{
-    @apply relative;
+    @apply relative drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] dark:drop-shadow-[1px_1px_5px_rgba(255,255,255,0.30)];
   }
 
   .blog img {
@@ -188,11 +199,11 @@
   }
 
   .main__blog img {
-    @apply md-lite:w-[450px] md-lite:h-[420px] md:w-[500px] lg:w-[600px] lg:h-[500px]
+    @apply md-lite:w-[450px] md-lite:h-[420px] md:w-[450px] lg:w-[600px] lg:h-[500px]
   }
 
   .second__blog img {
-    @apply md-lite:h-[200px] md:w-[280px] md:h-[200px] lg:w-[400px] lg:h-[240px]
+    @apply md-lite:h-[200px] md:w-[240px] md:h-[200px] lg:w-[360px] lg:h-[240px]
   }
 
   .blog__description, .blog__description-1st {
@@ -221,18 +232,18 @@
   }
 
   footer li {
-    @apply pt-1 capitalize py-2 cursor-pointer font-normal hover:text-gray-100 text-small-size md:text-[1.1rem]
+    @apply capitalize py-2 cursor-pointer font-normal hover:text-gray-100 text-small-size md:text-[1.1rem]
   }
 
   .footer__container {
-    @apply xs:w-[calc(100%-14rem)] border-b border-[#2B1ACA] gap-3 px-5 mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
+    @apply xs:w-[calc(100%-14rem)] border-b border-[#1a0aa8] dark:border-[#0c0091] gap-3 px-5 mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
   }
   .social__media{
     @apply mt-4 flex xs:justify-around items-center 
   }
 
-  .social__media li {
-    @apply w-[1.5rem] h-[1.5rem] text-[1.025rem] xs:w-8 xs:h-8 mx-1 pt-0 xs:text-big-size text-center rounded-lg bg-all-light text-[#130B5F] hover:text-gray-0 hover:bg-[#050222]
+  .social-icon {
+    @apply flex justify-center items-center w-[1.5rem] h-[1.5rem] text-[1.025rem] xs:w-8 xs:h-8 xs:text-big-size text-center rounded-lg bg-all-light text-[#130B5F] hover:text-gray-0 hover:bg-[#050222]
   }
 
   .footer-title {

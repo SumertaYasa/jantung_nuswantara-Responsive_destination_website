@@ -5,15 +5,15 @@ module.exports = {
   theme: {
     colors: {
       'all': {
-        light: '#FFF6EE', // Warna terang
-        dark: '#061419'   // Warna gelap (lebih terang)
+        light: '#FFF6EE',
+        dark: '#061419'   
       },
       'footer': {
-        light: '#130B5F', // Warna terang
-        dark: '#0B0731'   // Warna gelap (lebih cerah)
+        light: '#130B5F',
+        dark: '#060139'   
       },
       'home': {
-        light: '#1454AE', // Warna terang
+        light: '#1454AE',
         dark: '#062249'   
       },
       'gray': {
