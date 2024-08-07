@@ -975,55 +975,6 @@ main:is(.dark *){
   opacity: 0.9;
 }
 
-/* Css for folder Destinasi */
-
-.read{
-  font-size: 0.813rem;
-  font-weight: 300;
-  text-transform: none;
-  line-height: 1.375;
-}
-
-@media (min-width: 700px){
-  .read{
-    font-size: 1.1rem;
-  }
-}
-
-.title-text{
-  padding-top: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-@media (min-width: 767px){
-  .title-text{
-    font-size: 1.45rem;
-  }
-}
-
-.img-destination{
-  margin-top: 1rem;
-  aspect-ratio: 9/3;
-  height: 200px;
-  width: 300px;
-}
-
-@media (min-width: 500px){
-  .img-destination{
-    height: 280px;
-    width: 450px;
-  }
-}
-
-@media (min-width: 767px){
-  .img-destination{
-    height: 300px;
-    width: 600px;
-  }
-}
-
 /* Tur */
 
 .swiper-container{
@@ -1127,20 +1078,6 @@ main:is(.dark *){
   -webkit-line-clamp: 3;
   font-size: 0.813rem;
   font-weight: 300;
-}
-
-/* css for next page */
-
-.gallery{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  height: 100%;
-  min-height: 60px;
-  width: 100%;
-  min-width: 0px;
-  border-radius: 0.25rem;
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* Blog */
@@ -1406,6 +1343,119 @@ footer li:hover{
   }
 }
 
+/* css destinasi */
+
+.read{
+  font-size: 0.813rem;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.375;
+}
+
+@media (min-width: 700px){
+  .read{
+    font-size: 1.1rem;
+  }
+}
+
+.title-text{
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+@media (min-width: 767px){
+  .title-text{
+    font-size: 1.45rem;
+  }
+}
+
+.img-destination{
+  margin-top: 1rem;
+  aspect-ratio: 9/3;
+  height: 200px;
+  width: 300px;
+}
+
+@media (min-width: 500px){
+  .img-destination{
+    height: 280px;
+    width: 450px;
+  }
+}
+
+@media (min-width: 767px){
+  .img-destination{
+    height: 300px;
+    width: 600px;
+  }
+}
+
+.main-img{
+  overflow: hidden;
+}
+
+@media (min-width: 500px){
+  .main-img{
+    height: 350px;
+  }
+}
+
+@media (min-width: 767px){
+  .main-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.main-title{
+  border-bottom-width: 1px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (min-width: 700px){
+  .main-title{
+    font-size: 2.5rem;
+  }
+}
+
+.maps{
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+@media (min-width: 767px){
+  .maps{
+    position: sticky;
+    top: 0px;
+    width: 500px;
+  }
+}
+
+/* css for next page */
+
+.gallery{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  height: 100%;
+  min-height: 60px;
+  width: 100%;
+  min-width: 0px;
+  border-radius: 0.25rem;
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .static{
   position: static;
 }
@@ -1579,6 +1629,10 @@ footer li:hover{
   padding-bottom: 1rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .pt-2{
   padding-top: 0.5rem;
 }
@@ -1673,6 +1727,11 @@ footer li:hover{
 
 .leading-snug{
   line-height: 1.375;
+}
+
+.text-gray-0{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark\:hidden:is(.dark *){
