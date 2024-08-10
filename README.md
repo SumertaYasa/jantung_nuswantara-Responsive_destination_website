@@ -5,6 +5,8 @@ Jantung Nuswantara adalah website pariwisata yang memungkinkan pengguna untuk me
 ## fitur 
 - responsif: Antarmuka pengguna yang sepenuhnya responsif untuk berbagai ukuran layar, termasuk desktop, tablet, dan ponsel.
 
+- dark mode/ mode malam: 
+
 ## instalasi
 
 - npm run dev

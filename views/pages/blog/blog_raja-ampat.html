@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candi Borobudur</title>
+  <link rel="shortcut icon" href="/assets/img/logo/logo-w.webp" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/output.css">
+  <!-- BOX ICONS -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+  <!-- navbar -->
+   <script src="/assets/js/navbar.js" defer></script>
+  <!-- btn dark mode -->
+  <script src="/assets/js/darkMode.js" defer></script>
+</head>
+<body>
+  <header class="font-normal l-header" id="header">
+    <nav class="nav b-container">
+      <a href="" class="logo">
+        <img class="w-8 h-8 logo-w md:w-10 md:h-10" src="/assets/img/logo/logo-w.webp" alt="">
+        <img class="absolute hidden top-2 md:top-[12px] w-8 h-8 logo-b md:w-10 md:h-10 dark:hidden" src="/assets/img/logo/logo-b.webp" alt="">
+      </a>
+      
+      <div class="flex items-center justify-center gap-4">
+        <div class="nav__menu show-menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/views/home/home.html#Home">Utama</a></li>
+            <li class="nav__item"><a href="/views/home/home.html#destinasi">Destinasi</a></li>
+            <li class="nav__item"><a href="/views/home/home.html#perjalanan">Perjalanan</a></li>
+            <li class="nav__item"><a href="/views/home/home.html#artikel">Artikel</a></li>
+          </ul>
+        </div>
+        
+        <button class="btn-darkMode"><i class='bx bxs-moon'></i></button>
+        
+        <div class="text-[1.75rem] cursor-pointer md:hidden" id="nav-burger">
+          <i class='bx bx-menu-alt-right' ></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pb-5 capitalize">
+    <div class="main-img">
+      <img class="h-auto max-w-full" src="/assets/img/blog/blog-2.webp" alt="Raja Ampat">
+    </div>
+    <section class="b-container md:grid md:grid-cols-[2fr,1fr]"> 
+      <div class="mx-5">
+        <h1 class="main-title border-b-0 text-[1rem] xs-lite:text-big-size md:text-[1.8rem]">Menyelami Pesona Laut dan Alam di Raja Ampat</h1>
+        <div class="flex gap-2 capitalize">
+          <h3 class="pr-2 border-r border-gray-600 dark:border-gray-0">24 juni 2024</h3>
+          <span>share: Made</span>
+        </div>
+
+        <div>
+          <h1 class="mt-2 font-normal text-[1.25rem] md:text-big-size">Menyelami Pesona Laut dan Alam di Raja Ampat</h1>
+          <p class="read">Raja Ampat, sebuah surga tersembunyi di ujung timur Indonesia, merupakan salah satu destinasi impian bagi para pecinta alam dan petualang. Terletak di Provinsi Papua Barat, Raja Ampat dikenal dengan keanekaragaman hayati lautnya yang luar biasa dan panorama alam yang memukau. Kawasan ini terdiri dari lebih dari 1.500 pulau kecil yang tersebar di perairan biru jernih, menciptakan pemandangan yang begitu magis dan memikat.</p>
+          
+          <h2 class="font-normal mt-3 text-[1.2rem] md:text-big-size">Keindahan Bawah Laut Raja Ampat</h2>
+          <p class="read">Raja Ampat sering disebut sebagai "Kepulauan Empat Raja" karena terdiri dari empat pulau utama: Waigeo, Batanta, Salawati, dan Misool. Masing-masing pulau menawarkan pesona alam yang unik, tetapi yang membuat Raja Ampat benar-benar istimewa adalah kehidupan bawah lautnya. Dengan lebih dari 75% spesies karang yang ada di dunia, Raja Ampat adalah rumah bagi berbagai macam kehidupan laut, termasuk ikan warna-warni, hiu, pari manta, dan penyu laut.
+            Snorkeling dan menyelam di Raja Ampat adalah pengalaman yang tidak boleh dilewatkan. Airnya yang jernih memungkinkan Anda melihat langsung keindahan karang dan ikan yang berenang di sekitarnya. Salah satu spot terbaik untuk menyelam adalah Misool, di mana Anda bisa menemukan Blue Magic, sebuah situs penyelaman terkenal dengan keanekaragaman biota laut yang menakjubkan.</p>
+          
+          <h2 class="font-normal mt-3 text-[1.2rem] md:text-big-size">Pesona Alam Daratan</h2>
+          <p class="read">Selain keindahan bawah lautnya, Raja Ampat juga menawarkan pesona daratan yang tak kalah menarik. Pulau-pulau di Raja Ampat dikelilingi oleh hutan tropis yang lebat, pantai pasir putih yang bersih, dan laguna biru yang tenang. Mendaki bukit di Pulau Piaynemo atau Wayag akan memberikan Anda pemandangan spektakuler dari atas, di mana gugusan pulau-pulau kecil terlihat seperti titik-titik hijau yang tersebar di atas perairan biru.</p>
+        </div>
+    </div>
+    
+    <div class="col-span-2 text-center">
+      <h1 class="mt-3 font-medium text-[1.3rem] md:text-big-size">artikel selanjutnya</h1>
+      <div class="grid grid-cols-[250px] xs:grid-cols-[repeat(2,250px)] justify-center md-lite:grid-cols-[repeat(3,minmax(0,250px))] lg:grid-cols-[repeat(4,250px)] gap-2 mt-5">
+        <a href="/views/pages/blog/blog_bromo.html">
+          <div class=" blog">
+            <img class="w-[250px] h-[250px]" src="/assets/img/blog/blog-3.webp" alt="Gunung Bromo">
+            <div class="blog__description">
+              <h2 class="uppercase">menggenggam keindahan fajar di bromo</h2>
+              <span class="capitalize">7 juli 2024</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/views/pages/blog/blog_komodo.html">
+          <div class="blog">
+            <img class="w-[250px] h-[250px]" src="/assets/img/blog/blog-1.webp" alt="Pulau Komodo">
+            <div class="blog__description">
+              <h2 class="uppercase">Menyusuri Jejak Naga Purba di Pulau Komodo</h2>
+              <span class="capitalize">8 agustus 2024</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="/views/pages/blog/blog_bromo.html">
+          <div class=" blog">
+            <img class="w-[250px] h-[250px]" src="/assets/img/blog/blog-3.webp" alt="Gunung Bromo">
+            <div class="blog__description">
+              <h2 class="uppercase">menggenggam keindahan fajar di bromo</h2>
+              <span class="capitalize">7 juli 2024</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/views/pages/blog/blog_komodo.html">
+          <div class="blog">
+            <img class="w-[250px] h-[250px]" src="/assets/img/blog/blog-1.webp" alt="Pulau Komodo">
+            <div class="blog__description">
+              <h2 class="uppercase">Menyusuri Jejak Naga Purba di Pulau Komodo</h2>
+              <span class="capitalize">8 agustus 2024</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__container">
+      <div>
+        <span class="flex w-[155px] h-[63px] md:w-[250px] md:h-[115px] justify-center items-center gap-2 capitaliz rounded-lg">
+          <img class="w-[50px] h-[50px] md:w-[100px] md:h-[100px]" src="/assets/img/logo/logo-w.webp" alt="">
+          <h1 class="text-[1rem] capitalize font-medium md:text-big-size">jantung<br>nuswantara</h1>
+        </span>
+          <ul class="social__media">
+            <li class="social-icon"><i class=' bx bxl-facebook'></i></li>
+            <li class="social-icon"><i class='bx bxl-instagram-alt'></i></li>
+            <li class="social-icon"><i class='bx bxl-twitter'></i></li>
+            <li class="social-icon"><i class='bx bxl-tiktok'></i></li>
+          </ul>
+      </div>
+      <div>
+        <h1 class="footer-title">detail tautan</h1>
+          <ul>
+            <li>utama</li>
+            <li>destinasi</li>
+            <li>perjalanan</li>
+            <li>artikel</li>
+          </ul>
+      </div>
+      <div>
+        <h1 class="footer-title">bantuan</h1>
+        <ul>
+          <li>pusat bantuan</li>
+          <li>FAQs</li>
+          <li>status</li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="h-[50px] text-center py-3 text-small-size">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+  </footer>
+</body>
+</html>

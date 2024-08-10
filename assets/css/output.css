@@ -1331,6 +1331,7 @@ footer li:hover{
 /* css destinasi */
 
 .read{
+  margin-top: 1rem;
   font-size: 0.813rem;
   font-weight: 300;
   text-transform: none;
@@ -1437,6 +1438,7 @@ footer li:hover{
   .maps{
     position: sticky;
     top: 0px;
+    margin-bottom: 2.5rem;
     width: 500px;
   }
 }
@@ -1546,6 +1548,8 @@ footer li:hover{
   }
 }
 
+/* css blog*/
+
 .static{
   position: static;
 }
@@ -1566,9 +1570,25 @@ footer li:hover{
   top: 0.5rem;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.mr-\[10px\]{
+  margin-right: 10px;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .mt-3{
@@ -1594,6 +1614,10 @@ footer li:hover{
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -1604,6 +1628,10 @@ footer li:hover{
 
 .h-\[120px\]{
   height: 120px;
+}
+
+.h-\[250px\]{
+  height: 250px;
 }
 
 .h-\[50px\]{
@@ -1634,6 +1662,10 @@ footer li:hover{
   width: 155px;
 }
 
+.w-\[250px\]{
+  width: 250px;
+}
+
 .w-\[500px\]{
   width: 500px;
 }
@@ -1648,6 +1680,10 @@ footer li:hover{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-\[250px\]{
+  grid-template-columns: 250px;
 }
 
 .items-center{
@@ -1690,6 +1726,19 @@ footer li:hover{
   border-bottom-width: 1px;
 }
 
+.border-b-0{
+  border-bottom-width: 0px;
+}
+
+.border-r{
+  border-right-width: 1px;
+}
+
+.border-gray-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(77 77 77 / var(--tw-border-opacity));
+}
+
 .bg-home-light{
   --tw-bg-opacity: 1;
   background-color: rgb(20 84 174 / var(--tw-bg-opacity));
@@ -1706,6 +1755,10 @@ footer li:hover{
 
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.pr-2{
+  padding-right: 0.5rem;
 }
 
 .pt-2{
@@ -1738,6 +1791,10 @@ footer li:hover{
 
 .text-\[1\.2rem\]{
   font-size: 1.2rem;
+}
+
+.text-\[1\.3rem\]{
+  font-size: 1.3rem;
 }
 
 .text-\[1\.5rem\]{
@@ -1805,6 +1862,11 @@ footer li:hover{
   display: none;
 }
 
+.dark\:border-gray-0:is(.dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .dark\:bg-home-dark:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(6 34 73 / var(--tw-bg-opacity));
@@ -1826,6 +1888,10 @@ footer li:hover{
 }
 
 @media (min-width: 500px){
+  .xs\:grid-cols-\[repeat\(2\2c 250px\)\]{
+    grid-template-columns: repeat(2,250px);
+  }
+
   .xs\:text-\[1rem\]{
     font-size: 1rem;
   }
@@ -1835,9 +1901,23 @@ footer li:hover{
   }
 }
 
+@media (min-width: 600px){
+  .xs-lite\:text-big-size{
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 700px){
+  .md-lite\:mr-0{
+    margin-right: 0px;
+  }
+
   .md-lite\:w-\[700px\]{
     width: 700px;
+  }
+
+  .md-lite\:grid-cols-\[repeat\(3\2c minmax\(0\2c 250px\)\)\]{
+    grid-template-columns: repeat(3,minmax(0,250px));
   }
 }
 
@@ -1903,12 +1983,20 @@ footer li:hover{
     font-size: 1.1rem;
   }
 
+  .md\:text-\[1\.25rem\]{
+    font-size: 1.25rem;
+  }
+
   .md\:text-\[1\.2rem\]{
     font-size: 1.2rem;
   }
 
   .md\:text-\[1\.65rem\]{
     font-size: 1.65rem;
+  }
+
+  .md\:text-\[1\.8rem\]{
+    font-size: 1.8rem;
   }
 
   .md\:text-big-size{
@@ -1927,6 +2015,10 @@ footer li:hover{
 
   .lg\:w-\[800px\]{
     width: 800px;
+  }
+
+  .lg\:grid-cols-\[repeat\(4\2c 250px\)\]{
+    grid-template-columns: repeat(4,250px);
   }
 
   .lg\:text-biggest-size{
