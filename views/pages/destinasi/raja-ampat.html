@@ -5,15 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raja Ampat</title>
   <link rel="shortcut icon" href="/assets/img/logo/logo-w.webp" type="image/x-icon">
-  <!-- CSS -->
+  <!-- css -->
   <link rel="stylesheet" href="/assets/css/output.css">
-  
-  <!-- BOX ICONS -->
+  <!-- box icons -->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-  
+
+  <!-- navbar -->
+  <script src="/assets/js/navbar.js" defer></script>
+  <!-- btn dark mode -->
+  <script src="/assets/js/darkMode.js" defer></script>
 </head>
 <body>
-    <a class="btn-back" aria-label="Kembali" href="/views/home/home.html"><i class='z-10 p-2 font-semibold text-big-size text-gray-0 bx bx-arrow-back' ></i></a>
+  <header class="font-normal l-header" id="header">
+    <nav class="nav b-container">
+      <a href="" class="logo">
+        <img class="w-8 h-8 logo-w md:w-10 md:h-10" src="/assets/img/logo/logo-w.webp" alt="">
+        <img class="absolute hidden top-2 md:top-[12px] w-8 h-8 logo-b md:w-10 md:h-10 dark:hidden" src="/assets/img/logo/logo-b.webp" alt="">
+      </a>
+      
+      <div class="flex items-center justify-center gap-4">
+        <div class="nav__menu show-menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/views/home/home.html#Home">Utama</a></li>
+            <li class="nav__item"><a href="/views/home/home.html#destinasi">Destinasi</a></li>
+            <li class="nav__item"><a href="/views/home/home.html#perjalanan">Perjalanan</a></li>
+            <li class="nav__item"><a href="/views/home/home.html#artikel">Artikel</a></li>
+          </ul>
+        </div>
+        
+        <button class="btn-darkMode"><i class='bx bxs-moon'></i></button>
+        
+        <div class="text-[1.75rem] cursor-pointer md:hidden" id="nav-burger">
+          <i class='bx bx-menu-alt-right' ></i>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main class="pb-5 capitalize">
     <div class="main-img">

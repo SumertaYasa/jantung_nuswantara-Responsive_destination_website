@@ -33,15 +33,15 @@
 
   /* btn */
   .btn-back {
-    @apply absolute top-3 left-3 w-[40px] h-[40px] rounded-full bg-home-light xl:fixed xl:top-[280px] xl:left-[90px];
+    @apply absolute top-3 left-3 w-[40px] h-[40px] rounded-full bg-home-light dark:bg-home-dark xl:fixed xl:top-[280px] xl:left-[90px] drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)];
   }
 
   .btn-send {
-    @apply flex mx-auto justify-center items-center sticky bottom-3 w-full max-w-[500px] h-[50px] text-[1.2rem] md:mx-auto md:my-4 font-semibold rounded-lg bg-[#F4872C] hover:bg-opacity-0 hover:border-[#F4872C] hover:border-2 hover:text-[#F4872C] text-gray-0;
+    @apply flex mx-auto justify-center items-center sticky bottom-1 w-full max-w-[500px] h-[50px] text-[1.2rem] md:mx-auto md:my-4 font-semibold rounded-lg bg-[#F4872C] hover:bg-[#ce6d1f] text-gray-0 drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] dark:drop-shadow-[1px_1px_5px_rgba(255,255,255,0.20)];
   }
 
   .btn-darkMode{
-    @apply flex justify-center items-center
+    @apply flex justify-center items-center;
   }
   /* nav */
   
@@ -139,7 +139,7 @@
   }
   
   .tur-icon {
-    @apply flex justify-center items-center fixed w-16 h-8 text-[1.2rem] bg-gradient-to-r from-[rgba(133,133,133,0.44)] to-[rgba(0,0,0,.44)] bg-opacity-10 backdrop-blur-md top-5 right-4 text-gray-0 rounded-xl p-2;
+    @apply flex justify-center items-center fixed w-16 h-8 text-[1.2rem] bg-gradient-to-r from-[rgba(72,72,72,0.7)] to-[rgba(62,44,36,0.44)] bg-opacity-10 backdrop-blur-md top-5 right-4 text-gray-0 rounded-xl p-2;
   }
   
   .tur-icon i {
@@ -220,7 +220,7 @@
     @apply xs:w-[calc(100%-14rem)] border-b border-[#1a0aa8] dark:border-[#0c0091] gap-3 px-5 mx-auto flex flex-col xs:flex-row xs:justify-around xs:px-0 ;
   }
   .social__media{
-    @apply mt-4 flex xs:justify-around items-center 
+    @apply mt-4 flex gap-3 xs:justify-around items-center 
   }
 
   .social-icon {
@@ -241,24 +241,47 @@
   }
 
   .img-destination {
-    @apply mt-4 aspect-[9/3] w-[300px] h-[200px] xs:w-[450px] xs:h-[280px] md:w-[600px] md:h-[300px];
+    @apply mt-4 aspect-[9/3] w-[300px] h-[200px] xs:w-[450px] xs:h-[280px] md:w-[600px] md:h-[300px] dark:brightness-95;
   }
 
   .main-img {
-    @apply md:flex md:justify-center md:items-center xs:h-[350px] overflow-hidden;
+    @apply md:mt-[62px] md:flex md:justify-center md:items-center xs:h-[350px] overflow-hidden;
   }
   
   .main-title{
-    @apply pt-6 pb-4 font-semibold capitalize border-b text-big-size md-lite:text-biggest-size;
+    @apply pt-6 pb-4 font-semibold capitalize border-b text-big-size md-lite:text-biggest-size ;
   }
 
   .maps {
-    @apply pt-[100px] mx-auto w-full max-w-full h-[400px] md:sticky md:top-0 md:w-[500px];
+    @apply pt-[100px] mx-auto w-full max-w-full h-[400px] md:sticky md:top-0 md:w-[500px] dark:brightness-95 drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] dark:drop-shadow-[1px_1px_6px_rgba(255,255,255,0.30)];
   }
-    /* css for next page */
-    .gallery {
-      @apply w-full h-full min-w-[0px] min-h-[60px] mx-2 rounded drop-shadow-md
-    }
+
+  /* css tur */
+  .main-tur__container {
+    @apply h-max md:h-screen b-container md:grid md:gap-2 md:grid-cols-[2fr,1fr] pb-4;
+  }
+
+
+  .gallery__container {
+    @apply flex items-center justify-center mt-4 md:justify-start;
+  }
+
+  .tur__container::-webkit-scrollbar {
+    @apply hidden;
+    scrollbar-width: none;
+  }
+  
+  .gallery {
+    @apply w-[100px] h-[100px] mx-2 rounded drop-shadow-md inline-block;
+  }
+
+  .tur__container {
+    @apply flex gap-2 my-5 overflow-auto md:overflow-y-auto md:flex-col h-max md:w-max md:h-[415px];
+  }
+
+  .another__tur {
+    @apply grid lg:grid-cols-[150px,1fr] my-2 md:mx-2 md:my-0 bg-gray-0 w-max gap-2 p-2 rounded-xl drop-shadow-[1px_1px_5px_rgba(0,0,0,0.30)] dark:brightness-95; 
+  }
 }
 
 
